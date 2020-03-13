@@ -28,6 +28,17 @@ p {
     font-size: 110%;
 }
 
+/* Style a */
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Formatação do Header*/
 
 header#cabecalho img#icone {
