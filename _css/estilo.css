@@ -28,14 +28,6 @@ p {
     font-size: 110%;
 }
 
-p a:visited {
-    color: blue; 
-}
- 
-p a:focus {
-    color: purple;
-}
-
 /* Formatação do Header*/
 
 header#cabecalho img#icone {
