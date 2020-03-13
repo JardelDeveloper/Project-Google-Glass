@@ -10,7 +10,7 @@
 body {
     background-color: #dddddd; 
     color: black ;
-    font-family: Calibri;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
 
@@ -151,6 +151,29 @@ article#noticia-principal h2 {
     background-color: #ddd;
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.titulo-direita {
+    text-align: right;
+}
+
+header#cabecalho-artigo h2 {
+     font-size: 13pt;
+     color: #cecece;
+     background-color: #fff;
+     margin: 0px;
+}
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+    color: #606060;
 }
 
 /* Formatação da tabela*/
