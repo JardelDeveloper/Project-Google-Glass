@@ -7,9 +7,9 @@ section#conteudo {
 }
 
 section#conteudo aside {
-    margin-top: 12px;
-    margin-left: -10px;
-    margin-bottom: -16px;
+    margin-top: -12px;
+    margin-right: 18px;
+    margin-bottom: 5px;
 }
 
 iframe#frame-spec {
