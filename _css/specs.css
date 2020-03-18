@@ -3,12 +3,24 @@
 section#conteudo {
     width: 1000px;
     margin: auto;
+    margin-top: 26px;
+}
+
+section#conteudo aside {
+    margin-top: 12px;
+    margin-left: -10px;
+    margin-bottom: -16px;
 }
 
 iframe#frame-spec {
     width: 410px;
-    height: 290px;
-    margin-left: 85px;
+    height: 295px;
+    margin-left: 60px;
 }
 
+aside#lateral-spec {
+    display: block;
+    width: 438px;
+    float: right; 
+}
 
