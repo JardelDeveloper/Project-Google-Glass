@@ -47,12 +47,14 @@
             <form action="">
                 <fieldset id="usuario">
                     <legend>Identificação do Usuário</legend> 
-                        <p>Nome:</p>
-                        <p>Senha:</p>
-                        <p>E-mail:</p>
-                        Sexo:
-                            - Masculino
-                            - Feminino
+                        <p>Nome:<input type="text" name="nome" id="idNome" placeholder="Nome Completo" size="45" maxlength="60" autofocus/></p>
+                        <p>Senha:<input type="password" name="senha" id="idSenha" placeholder="8 dígitos" size="5" maxlength="8"/></p>
+                        <p>E-mail:<input type="email" name="email" id="idEmail" placeholder="Digite seu e-mail" size="20" maxlength="40"/></p>
+                        <fieldset> 
+                            <legend>Sexo</legend> 
+                                - Masculino
+                                - Feminino
+                        </fieldset>
                         <p>Data de Nascimento:</p>
                 </fieldset>
                 <fieldset id="endereco">
