@@ -15,7 +15,7 @@ body {
 }
 
 div#interface {
-    width: 1050px;
+    width: 1100px;
     background-color: #ffffff;
     margin: -20px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,.5);
@@ -42,9 +42,11 @@ a:hover {
 /* Formatação do Header*/
 
 header#cabecalho img#icone {
+    float: right;
     position: absolute;
-    left: 1000px;
+    right: 0px;
     top: 50px;
+    padding: 0px 150px 0px 10px;
 }
 
 header#cabecalho {
@@ -101,16 +103,13 @@ figure.foto-legenda:hover figcaption {
 
 /* Formatação do Menu nav */
 
-nav#menu {
-    display: block;
-}
-
 nav#menu ul {
-    list-style: none;
+    float: right;
     text-transform: uppercase;
     position: absolute;
+    right: 0px;
     top: -20px;
-    left: 575px;
+    padding: 0px 121px 0px 0px;
 }
 
 nav#menu li {
@@ -235,7 +234,7 @@ table#tabela-spec caption span {
 
 aside#lateral {
     display: block;
-    width: 455px;
+    width: 506px;
     float: right;
     background-color: #ddd; 
     padding: 10px;
