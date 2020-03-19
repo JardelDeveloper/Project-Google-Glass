@@ -99,7 +99,7 @@ figure.foto-legenda:hover figcaption {
     opacity: 1;
 }
 
-/* Formatação do Menu */
+/* Formatação do Menu nav */
 
 nav#menu {
     display: block;
@@ -221,6 +221,16 @@ table#tabela-spec caption span {
     margin-top: 10px;
 }
 
+/* Formatação dos videos */
+
+.tv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
 /* style aside */
 
 aside#lateral {
@@ -255,6 +265,7 @@ footer#rodape {
 
 footer#rodape p {
     text-align: center;
+    margin: 15px 0px -10px 0px;
 }
 
 .direitoAutoral {
