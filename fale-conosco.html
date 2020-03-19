@@ -47,27 +47,28 @@
             <form action="">
                 <fieldset id="usuario">
                     <legend>Identificação do Usuário</legend> 
-                        <label for="idNome">Nome:</label><input type="text" name="nome" id="idNome" placeholder="Nome Completo" size="40" maxlength="60" autofocus/>
-                        <label for="idSenha">Senha:</label><input type="password" name="senha" id="idSenha" placeholder="Senha" size="10" maxlength="15"/>
-                        <label for="idEmail">E-mail:</label><input type="email" name="email" id="idEmail" placeholder="Digite seu e-mail" size="30" maxlength="40"/>
+                        <p><label for="idNome">Nome:</label><input type="text" name="nome" id="idNome" placeholder="Nome Completo" size="40" maxlength="60" autofocus/></p>
+                        <p><label for="idEmail">E-mail:</label><input type="email" name="email" id="idEmail" placeholder="usuario@email.com" size="30" maxlength="40"/></p>
+                        <p><label for="idSenha">Senha:</label><input type="password" name="senha" id="idSenha" placeholder="Senha" size="10" maxlength="15"/></p>
                         <fieldset id="sexo"> 
                             <legend>Sexo</legend> 
-                                <input type="radio" name="opcaoSexo" id="idMasculino"/><label for="idMasculino">Masculino</label> 
+                                <input type="radio" name="opcaoSexo" id="idMasculino" checked/><label for="idMasculino">Masculino</label><br/>
                                 <input type="radio" name="opcaoSexo" id="idFeminino"/><label for="idFeminino">Feminino</label> 
                         </fieldset>
-                        <label for="idNascimento">Data de Nascimento:</label>
+                        <p><label for="idNascimento">Data de Nascimento:</label><input type="date" name="dataNascimento" id="idNascimento"/></p>
                 </fieldset>
                 <fieldset id="endereco">
                     <legend>Endereço do Usuário</legend> 
-                        Logradouro:
-                        Número:
-                        Estado:
-                        Cidade:
+                        <p><label for="idEndereço">Endereço:</label><input type="text" name="endereço" id="idEndereço" size="25" maxlength="40" placeholder="Rua, Av, Trav"/></p>
+                        <p><label for="Numero">Número:</label><input type="number" name="numero" id="idNumero" min="0" max="99999"/></p>
+                        <p><label for="idComplemento">Complemento:</label><input type="text" name="complemento" id="idComplemento" size="15" maxlength="10" placeholder="Casa / Apartamento"/></p>
+                        <p><label for="idEstado">Estado:</label><input type="text" name="estado" id="idEstado"/></p>
+                        <p><label for="idCidade">Cidade:</label><input type="text" name="cidade" id="idCidade"/></p>
                 </fieldset>
                 <fieldset id="mensagem">
                     <legend>Mensagem do Usuário</legend> 
-                        Grau de Urgência:
-                        Mensagem:
+                        <p><label for="">Grau de Urgência:</label></p>
+                        <p><label for="">Mensagem:</label></p>
                 </fieldset>
                 <fieldset id="pedido">
                     <legend>Quero um Google Glass</legend> 
