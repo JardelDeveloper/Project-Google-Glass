@@ -44,32 +44,94 @@
                 </hgroup>
             </header>
 
-            <form action="">
-                <fieldset id="usuario">
+            <form method="POST" id="idForm" action="mailto:developerprojectfullstack@gmail.com">
+                <fieldset id="field-usuario">
                     <legend>Identificação do Usuário</legend> 
-                        <p><label for="idNome">Nome:</label><input type="text" name="nome" id="idNome" placeholder="Nome Completo" size="40" maxlength="60" autofocus/></p>
-                        <p><label for="idEmail">E-mail:</label><input type="email" name="email" id="idEmail" placeholder="usuario@email.com" size="30" maxlength="40"/></p>
-                        <p><label for="idSenha">Senha:</label><input type="password" name="senha" id="idSenha" placeholder="Senha" size="10" maxlength="15"/></p>
-                        <fieldset id="sexo"> 
-                            <legend>Sexo</legend> 
-                                <input type="radio" name="opcaoSexo" id="idMasculino" checked/><label for="idMasculino">Masculino</label><br/>
-                                <input type="radio" name="opcaoSexo" id="idFeminino"/><label for="idFeminino">Feminino</label> 
-                        </fieldset>
-                        <p><label for="idNascimento">Data de Nascimento:</label><input type="date" name="dataNascimento" id="idNascimento"/></p>
+                    <p>
+                        <label for="idNome">Nome: </label>
+                        <input type="text" name="nome" id="idNome" placeholder="Nome Completo" size="40" maxlength="60" autofocus/>
+                    </p>
+
+                    <p>
+                        <label for="idEmail">E-mail: </label>
+                        <input type="email" name="email" id="idEmail" placeholder="usuario@email.com" size="30" maxlength="40"/>
+                    </p>
+
+                    <p>
+                        <label for="idSenha">Senha: </label>
+                        <input type="password" name="senha" id="idSenha" placeholder="Senha" size="10" maxlength="15"/>
+                    </p>
+
+                    <fieldset id="sexo"> 
+                        <legend>Sexo</legend> 
+                            <input type="radio" name="opcaoSexo" id="idMasculino" checked/>
+                            <label for="idMasculino">Masculino</label>
+
+                            <br/>
+
+                            <input type="radio" name="opcaoSexo" id="idFeminino"/>
+                            <label for="idFeminino">Feminino</label> 
+                    </fieldset>
+
+                    <p>
+                        <label for="idNascimento">Data de Nascimento: </label>
+                        <input type="date" name="dataNascimento" id="idNascimento"/>
+                    </p>
                 </fieldset>
-                <fieldset id="endereco">
+
+                <fieldset id="field-endereco">
                     <legend>Endereço do Usuário</legend> 
-                        <p><label for="idEndereço">Endereço:</label><input type="text" name="endereço" id="idEndereço" size="25" maxlength="40" placeholder="Rua, Av, Trav"/></p>
-                        <p><label for="Numero">Número:</label><input type="number" name="numero" id="idNumero" min="0" max="99999"/></p>
-                        <p><label for="idComplemento">Complemento:</label><input type="text" name="complemento" id="idComplemento" size="15" maxlength="10" placeholder="Casa / Apartamento"/></p>
-                        <p><label for="idEstado">Estado:</label><input type="text" name="estado" id="idEstado"/></p>
-                        <p><label for="idCidade">Cidade:</label><input type="text" name="cidade" id="idCidade"/></p>
+                    <p>
+                        <label for="idEndereço">Endereço: </label>
+                        <input type="text" name="endereço" id="idEndereço" size="25" maxlength="40" placeholder="Rua, Av, Trav"/>
+                    </p>
+
+                    <p>
+                        <label for="Numero">Número: </label>
+                        <input type="number" name="numero" id="idNumero" min="0" max="99999"/>
+                    </p>
+
+                    <p>
+                        <label for="idComplemento">Complemento: </label>
+                        <input type="text" name="complemento" id="idComplemento" size="15" maxlength="10" placeholder="Casa / Apartamento"/>
+                    </p>
+
+                    <p>
+                        <label for="idEstado">Estado:</label>
+                        <select name="estado" id="idEstado">
+                            <optgroup label="Região Sudeste">
+                                <option value="ES">Espírito Santo</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="RJ" selected>Rio de Janeiro</option>
+                                <option value="SP">São Paulo</option>
+                            </optgroup>
+                            <optgroup label="Região Sul">
+                                <option value="PR">Paraná</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="SC">Santa Catarina</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="idCidade">Cidade: </label>
+                        <input type="text" name="cidade" id="idCidade"/>
+                    </p>
                 </fieldset>
-                <fieldset id="mensagem">
+
+                <fieldset id="field-mensagem">
                     <legend>Mensagem do Usuário</legend> 
-                        <p><label for="">Grau de Urgência:</label></p>
-                        <p><label for="">Mensagem:</label></p>
+                    <p>
+                        <label for="idUrgencia">Grau de Urgência: </label> Mínimo 
+                        <input type="range" name="urgencia" id="idUrgencia" min="0" max="10" step="2"/> Máximo
+                    </p>
+
+                    <p>
+                        <label for="idMensagem">Mensagem: </label>
+                        <textarea name="mensagem" id="idMensagem" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                    </p>
                 </fieldset>
+
                 <fieldset id="pedido">
                     <legend>Quero um Google Glass</legend> 
                         Gostaria de adquirir um Google Glass quando disponível
