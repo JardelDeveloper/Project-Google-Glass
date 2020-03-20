@@ -87,8 +87,8 @@
                     </p>
 
                     <p>
-                        <label for="Numero">Número: </label>
-                        <input type="number" name="numero" id="idNumero" min="0" max="99999"/>
+                        <label for="idNumero">Número: </label>
+                        <input type="text" name="numero" id="idNumero" placeholder="Nº da casa ou apt"/>
                     </p>
 
                     <p>
@@ -99,6 +99,32 @@
                     <p>
                         <label for="idEstado">Estado:</label>
                         <select name="estado" id="idEstado">
+                            <optgroup label="Região Centro-Oeste">
+                                <option value="DF">Distrito Federal</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                            </optgroup>
+                            <optgroup label="Região Nordeste">
+                                <option value="AL">Alagoas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="SE">Sergipe</option>
+                            </optgroup>
+                            <optgroup label="Região Norte">
+                                <option value="AC">Acre</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="PA">Pará</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="TT">Tocantins</option>
+                            </optgroup>
                             <optgroup label="Região Sudeste">
                                 <option value="ES">Espírito Santo</option>
                                 <option value="MG">Minas Gerais</option>
@@ -115,7 +141,7 @@
 
                     <p>
                         <label for="idCidade">Cidade: </label>
-                        <input type="text" name="cidade" id="idCidade"/>
+                        <input type="text" name="cidade" id="idCidade" placeholder="Cidade"/>
                     </p>
                 </fieldset>
 
@@ -132,12 +158,24 @@
                     </p>
                 </fieldset>
 
-                <fieldset id="pedido">
-                    <legend>Quero um Google Glass</legend> 
-                        Gostaria de adquirir um Google Glass quando disponível
-                        Cor:
-                        Quantidade:
-                        Preço Total: R$
+                <fieldset id="fieldset-pedido">
+                <legend>Quero um Google Glass</legend> 
+                    <p>
+                        <label for="idPedido">Gostaria de adquirir um Google Glass quando disponível</label>
+                        <input type="checkbox" name="pedido" id="idPedido" checked/>                      
+                    </p>
+                    <p>
+                        <label for="idCor">Cor:</label>
+                        <input type="color" name="cor" id="idCor"/> 
+                    </p>
+                    <p>
+                        <label for="idQuantidade">Quantidade:</label> 
+                        <input type="number" name="quantidade" id="idQuantidade" min="0" max="5" value="0"/>
+                    </p>
+                    <p>
+                        <label for="idPreco">Preço Total: R$</label> 
+                        <input type="text" name="preco" id="idPreco" placeholder="Total a Pagar" size="10" readonly/>
+                    </p>
                 </fieldset>
 
                 [BOTÃO ENVIAR]
