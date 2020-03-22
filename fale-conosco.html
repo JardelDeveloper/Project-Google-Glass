@@ -8,7 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
     <link rel="stylesheet" type="text/css" href="css/form.css"/>
-    <script lang="Javascript" src="javascript/funcoes.js"></script>
+    <script lang="javascript" src="javascript/funcoes.js"></script>
+    <script>
+        function calc_total(){
+            var qtd = parseInt(document.getElementById('idQuantidade').value);
+            tot = qtd * 1500;
+            document.getElementById('idPreco').value = tot;
+        }
+    </script>
 </head>
 
 <body>
@@ -54,7 +61,7 @@
                 </hgroup>
             </header>
 
-            <form method="POST" id="idForm" action="mailto:developerprojectfullstack@gmail.com">
+            <form method="POST" id="idForm" action="mailto:developerprojectfullstack@gmail.com" oninput="calc_total();">
                 <fieldset id="field-usuario">
                     <legend>Identificação do Usuário</legend> 
                     <p>
