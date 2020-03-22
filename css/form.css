@@ -65,3 +65,7 @@ fieldset#field-pedido {
     text-indent: 0px;
     text-align: center;
 }
+
+input#idEnviar {
+    margin-left: 180px;
+}
