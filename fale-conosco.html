@@ -71,7 +71,7 @@
 
                     <p>
                         <label for="idEmail">E-mail: </label>
-                        <input type="email" name="email" id="idEmail" placeholder="usuario@email.com" size="30" maxlength="40"/>
+                        <input type="email" name="email" id="idEmail" placeholder="usuario@email.com" size="39" maxlength="60"/>
                     </p>
 
                     <p>
@@ -100,17 +100,17 @@
                     <legend>Endereço do Usuário</legend> 
                     <p>
                         <label for="idEndereço">Endereço: </label>
-                        <input type="text" name="endereço" id="idEndereço" size="25" maxlength="40" placeholder="Rua, Av, Trav"/>
+                        <input type="text" name="endereço" id="idEndereço" size="35" maxlength="40"/>
                     </p>
 
                     <p>
                         <label for="idNumero">Número: </label>
-                        <input type="text" name="numero" id="idNumero" placeholder="Nº da casa ou apt"/>
+                        <input type="text" name="numero" id="idNumero" size="3"/>
                     </p>
 
                     <p>
                         <label for="idComplemento">Complemento: </label>
-                        <input type="text" name="complemento" id="idComplemento" size="15" maxlength="10" placeholder="Casa / Apartamento"/>
+                        <input type="text" name="complemento" id="idComplemento" size="8" maxlength="15"/>
                     </p>
 
                     <p>
@@ -164,21 +164,21 @@
 
                 <fieldset id="field-mensagem">
                     <legend>Mensagem do Usuário</legend> 
-                    <p>
+                    <p id="pCustom">
                         <label for="idUrgencia">Grau de Urgência: </label> Mínimo 
                         <input type="range" name="urgencia" id="idUrgencia" min="0" max="10" step="2"/> Máximo
                     </p>
 
                     <p>
                         <label for="idMensagem">Mensagem: </label>
-                        <textarea name="mensagem" id="idMensagem" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                        <textarea name="mensagem" id="idMensagem" cols="58" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
                     </p>
                 </fieldset>
 
-                <fieldset id="fieldset-pedido">
+                <fieldset id="field-pedido">
                 <legend>Quero um Google Glass</legend> 
-                    <p>
-                        <label for="idPedido">Gostaria de adquirir um Google Glass quando disponível</label>
+                    <p class="pCustom">
+                        <label for="idPedido">Gostaria de um Google Glass quando disponível</label>
                         <input type="checkbox" name="pedido" id="idPedido" checked/>                      
                     </p>
                     <p>

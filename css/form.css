@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* Formatação do form */
+form {
+    width: 500px;
+    margin: auto;
+}
+
+/* Estilização dos inputs e textarea */
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+/* hover nos inputs e textarea do form */
+input:hover, textarea:hover {
+    background-color: #ddd;
+}
+
+/* Estilização do legend */
+legend {
+    color: #888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+/* Estilização do legend */
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
+
+fieldset#sexo {
+    width: 150px;
+}
+
+fieldset#field-usuario {
+    background: url("../imagens/icone-contato.png") no-repeat 95% 95%;
+}
+
+fieldset#field-endereco {
+    background: url("../imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+
+fieldset#field-mensagem {
+    background: url("../imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+
+fieldset#field-pedido {
+    background: url("../imagens/icone-pagamento.png") no-repeat 95% 95%;
+}
+
+.pCustom {
+    font-size: 13pt;
+    font-weight: bold;
+    text-indent: 0px;
+    text-align: center;
+    
+}
+
+#pCustom {
+    text-indent: 0px;
+    text-align: center;
+}
