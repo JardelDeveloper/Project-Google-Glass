@@ -12,17 +12,13 @@
 
     <!-- You can use Open Graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-    <meta property="og:url"           content="https://developers.facebook.com/docs/plugins/share-button?locale=pt_BR"/>
+    <meta property="og:url"           content="https://jardeldeveloper.github.io/projectGoogleGlass/"/>
     <meta property="og:type"          content="website"/>
     <meta property="og:title"         content="Your Website Title"/>
     <meta property="og:description"   content="Your description"/>
 </head>
 
 <body>
-<!--Required share button facebook-->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v6.0"></script>
-
 <div id="interface">
     <header id="cabecalho">
         <hgroup>
@@ -67,9 +63,6 @@
 
             <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
 
-            <!--Required div for share button facebook-->
-            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
-
             <ul id="album-fotos">
                 <li id="foto01"><span>Agenda e lembretes</span></li>
                 <li id="foto02"><span>Sergey Brin usando o Glass</span></li> 
@@ -78,6 +71,23 @@
                 <li id="foto05"><span>Vários tipos de lente</span></li> 
                 <li id="foto06"><span>Informações importantes</span></li>
             </ul>
+
+            <!-- Load Facebook SDK for JavaScript -->
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+            <!-- Your share button code -->
+            <div class="fb-share-button" 
+            data-href="https://jardeldeveloper.github.io/projectGoogleGlass/" 
+            data-layout="button_count">
+            </div>
+
         </article>
     </section>
 
