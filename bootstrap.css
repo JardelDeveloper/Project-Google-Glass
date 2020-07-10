@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+header#header {
+    height: 45px;
+}
+
+main#main {
+    height: 45px;
+}
+
+footer#footer {
+    height: 45px;
+}
